@@ -17,3 +17,5 @@
     </script>
 
 詳細は[サンプル](sample/index.html)を参照のこと。
+
+![イメージ](sample/examples.png)
