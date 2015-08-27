@@ -3,7 +3,14 @@
 */
 /*@preserve Copyright (c) 2014 Masayuki Maekawa Licensed MIT*/
 
-(function($){
+(function (factory) {
+  if (typeof module === "object" && typeof module.exports === "object") {
+    module.exports = factory(require("jquery"), window, document);
+  }
+  else {
+    factory(jQuery, window, document);
+  }
+} (function ($, window, document, undefined) {
   "use strict";
   $.fn.flatHeightAll = function(){
     var tmpLeft       = -1,
@@ -53,4 +60,4 @@
 
     return this;
   };
-})(jQuery);
+}));
