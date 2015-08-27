@@ -5,12 +5,12 @@
 
 (function (factory) {
   if (typeof module === "object" && typeof module.exports === "object") {
-    module.exports = factory(require("jquery"), window, document);
+    module.exports = factory(require("jquery"));
   }
   else {
-    factory(jQuery, window, document);
+    factory(jQuery);
   }
-} (function ($, window, document, undefined) {
+} (function ($) {
   "use strict";
   $.fn.flatHeightAll = function(){
     var tmpLeft       = -1,
